@@ -1,0 +1,252 @@
+@media only screen and (max-width: 767px) {
+
+    body{
+        padding: 0;
+        margin: 0;
+        
+    }
+    #front-end{
+        font-size: large;
+    }
+   
+    .main{
+      overflow-x: hidden;
+      background-image: url(images/background/moon.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center; 
+      width: 100%;
+      
+    }
+    
+    .name{
+          position:relative;
+          bottom:20vw;
+    }
+  
+    #name-s,#name-h,#name-e,#name-i,#name-k,#name-b,#name-a,#name-z,#name-i,#name-t,#name-h{
+        font-size: 50px;
+        position: relative;
+        margin-top: 6vw;
+        margin-bottom: 3vw;
+    }
+    
+    .info{
+        height:100vh;
+    }
+    
+    .overview{
+      overflow-x: hidden;
+      background-image: url(images/background/moon.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%; 
+    }
+    .info{
+      margin: 0;
+    }
+    .info p{
+      margin-left: 0.5%;
+      margin-right: 0.5%;
+      text-align:center;
+    }
+  
+    .planet-1{
+    z-index: 0;
+    position: absolute;
+    width: 40vw;
+    height: 40vw;
+    left: -20vw;
+    top: 40vw;
+    }
+  
+    .planet-2{
+      z-index: 0;
+      position: absolute;
+      width: 50vw;
+      height: 50vw;
+      bottom: 80px;
+      left: 200px;
+    }
+    .planet-3{
+      z-index: 0;
+      position: absolute;
+      width: 25vw;
+      height: 25vw;
+      left: 300px;
+      top: 50px;
+  
+    }
+    .education{
+      overflow-x: hidden;
+      background-image: url(images/background/moon.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+  
+    }
+    .bca,.mca,.info{
+      width: 92%;
+    }
+    .skill{
+      color: white;
+      width: 100%;
+      font-family: Glitch;
+      margin-top: 35%;
+      padding-top: 80px;
+      
+    }
+    .skill img{
+      z-index: 1;
+      position: relative;
+      top: 0;
+      margin: 0;
+      left: 38%;
+      height: 80px;
+      width: 80px;
+      bottom: 200px;
+      right: 70px;
+  
+    }
+    .skill p{
+      position: relative;
+      color: white;
+      font-size: 10px;
+      margin: 0;
+      left: 35%;
+    }
+    .html,.css,.angular,.photoshop,.js{
+      float: none;
+      background-repeat: no-repeat;
+      background-size: 200px;
+      background-size: 100% ;
+      height: 124.2px;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      position: relative;
+    }
+    .html{
+      background-image: url(images/banner-mobile/ban1.png);
+    }
+    .css{
+      background-image: url(images/banner-mobile/ban2.png);
+    }
+    .js{
+      background-image: url(images/banner-mobile/ban3.png);
+    }
+    .angular{
+      background-image: url(images/banner-mobile/ban4.png);
+    }
+    .photoshop{
+      background-image: url(images/banner-mobile/ban5.png);
+    }
+
+    @keyframes html-animations {
+        from{
+            left: -100px;
+      
+        }
+        to{
+            left: 0;
+        }
+      }
+      
+      @keyframes css-animations {
+        from{
+            left: -100px;
+      
+        }
+        to{
+            left: 0;
+        }
+      }
+      
+      @keyframes js-animations {
+        from{
+            left: -100px;
+        }
+        to{
+            left: 0;
+        }
+      }
+      
+      @keyframes angular-animations {
+        from{
+            left: -100px;
+      
+        }
+        to{
+            left: 0;
+        }
+      }
+      
+      @keyframes photoshop-animations {
+        from{
+            left: -100px;
+      
+        }
+        to{
+            left: 0;
+        }
+      }
+      
+      
+      @media (prefers-reduced-motion: no-preference) {
+        .html-animation {
+          animation: html-animations 2s ;
+          animation-timing-function: ease-in-out;
+          animation-fill-mode: forwards;
+        };
+      }
+      
+      @media (prefers-reduced-motion: no-preference) {
+        .css-animation {
+          animation: css-animations 2s ;
+          animation-timing-function: ease-in-out;
+          animation-fill-mode: forwards;
+        };
+      }
+      @media (prefers-reduced-motion: no-preference) {
+        .js-animation {
+          animation: js-animations 2s ;
+          animation-timing-function: ease-in-out;
+          animation-fill-mode: forwards;
+        };
+      }
+      @media (prefers-reduced-motion: no-preference) {
+        .angular-animation {
+          animation: angular-animations 2s ;
+          animation-timing-function: ease-in-out;
+          animation-fill-mode: forwards;
+        };
+      }
+      @media (prefers-reduced-motion: no-preference) {
+        .photoshop-animation {
+          animation: photoshop-animations 2s ;
+          animation-timing-function: ease-in-out;
+          animation-fill-mode: forwards;
+        };
+      }
+      
+  
+    .freelancer{
+      background-image: url(images/background/freelance-mobile.png);
+      background-repeat: no-repeat;
+      background-size: 100% ;
+      height: 100vh;
+      color: white;
+      display: grid;
+      place-items: center;
+      align-content: center;
+      text-align: center;
+    }
+    
+    .freelancer p{
+      margin-left: 5%;
+      margin-right: 5%;
+      font-style: normal;
+    }
+  
+  
+  }

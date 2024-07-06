@@ -1,0 +1,675 @@
+@font-face { font-family: Mather; src: url('font/MatherlaordtrialRegular-RpZaW.otf'); }
+@font-face {font-family: Autumn; src: url('font/ThanksAutumn-6YVJD.ttf') format("truetype");}
+@font-face {   font-family: KungFu; src: url('font/KungFuMaster-K7vrX.otf');}
+@font-face {   font-family: Rottering; src: url('font/Rottering-p7dar.otf');}
+@font-face {    font-family: Bubble; src: url('font/BubbleDope-K7jRA.ttf');}
+@font-face {    font-family: Glitch; src: url('font/Glitch-pP7r.ttf') format("truetype");}
+@font-face {    font-family: Pixel; src: url('font/SlobDoughRegularStamp-BWM2x.otf') format("truetype");}
+@font-face {    font-family: Space; src: url('font/ReglisseBack-eZewm.ttf') format("truetype");}
+*{
+   padding: 0;
+   margin: 0;   
+}
+body{
+    overflow-x: hidden;
+    background-image: url(images/background/moon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+}
+
+.main,.overview,.skill,.project,.contact{
+  min-height: 100vh;
+}
+/*Sheik Bazith*/
+.main{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    align-content: center; 
+}
+.space-img{
+  width: 60px;
+  height: 60px;
+  transform: rotate(-80deg);
+  position: relative;
+}
+@keyframes space-animations {
+  0%   {right: -700px;
+  top:-90px}
+100% {
+  top:90px;
+  right: 800px;}
+}
+
+@media (prefers-reduced-motion: no-preference){
+  .space-img-animation{
+    animation: space-animations 30s;
+    animation-iteration-count: infinite;
+  }
+}
+
+.name{
+    padding: 0;
+    margin: 0;
+    float: left;
+    color: lightgray;
+    position: relative;
+}
+#name-s,#name-h,#name-e,#name-i,#name-k,#name-b,#name-a,#name-z,#name-i,#name-t,#name-h{
+  float: left;
+  font-family: Bubble;
+  font-size: 9vw;
+  font-weight: 10;
+  word-spacing: 1vw;
+  position: relative;
+  text-align: justify;
+}
+#front-end{
+    position: relative;
+    font-size: 3vw;
+    font-family: KungFu;
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+  @keyframes names-animation {
+    0%   {top: 0px;}
+    50%  {top: 10px;}
+    100% {top: 0px;}
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .one-animation,.three-animation {
+      animation: names-animation 2s ;
+      animation-iteration-count: infinite;
+      animation-fill-mode: inherit;
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .two-animation {
+      animation: names-animation 2s 1s;
+      animation-iteration-count: infinite;
+      animation-fill-mode: inherit;
+      animation-direction: alternate-reverse;
+    }
+  }
+
+/*Sheik Bazith*/
+
+/* Information/Overview */
+.overview,.contact{
+  text-align: center;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  text-align: justify; 
+
+}
+
+.info{
+    position: relative;
+    display: grid;
+    align-content: center;
+    text-align: justify;
+    color: white;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+@keyframes infos-animation {
+  from{
+      opacity: 0;
+
+  }
+  to{
+      opacity: 1;
+  }
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .info-animation h1, .info-animation p {
+    animation: infos-animation 5s ;
+    animation-fill-mode: forwards;
+  };
+}
+
+/* Information/Overview */
+
+.overview{
+  text-align: center;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  text-align: justify; 
+
+}
+
+
+.info{
+    position: relative;
+    display: grid;
+    align-content: center;
+    text-align: center;
+    color: white;
+
+}
+
+.info p{
+    position: relative;
+    bottom: 15px;
+}
+@keyframes infos-animation {
+    from{
+        opacity: 0;
+
+    }
+    to{
+        opacity: 1;
+    }
+  }
+
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .info-animation h1, .info-animation p {
+      animation: infos-animation 5s ;
+      animation-fill-mode: forwards;
+    };
+  }
+  
+/* Information/Overview */
+
+/* Planet */
+.planet-1{
+  z-index: 0;
+  position: absolute;
+  width: 20vw;
+  height: 20vw;
+  left: -20vw;
+}
+.planet-2{
+  z-index: 0;
+  position: absolute;
+  width: 25vw;
+  height: 25vw;
+  bottom: 20px;
+  left: 700px;
+}
+.planet-3{
+  z-index: 0;
+  position: absolute;
+  width: 15vw;
+  height: 15vw;
+  left: 360px;
+  top: 15vw;
+}
+
+@keyframes planet-animations {
+  from{
+      transform: scale(0);
+
+  }
+  to{
+      transform: scale(1);
+  }
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .planet-animation {
+    animation: planet-animations 1s ;
+    animation-fill-mode: forwards;
+  };
+}
+
+/* Planet */
+
+
+
+/*Skills*/
+.skill{
+  color: white;
+  width: 100%;
+  font-family: Glitch;
+}
+.skill img, .skill p{
+  display: grid;
+  place-items: center;
+  align-content: center;
+  width: 100px;
+  margin-left: 70px;
+  margin-top: 200px;
+ 
+}
+.html,.css,.angular,.photoshop,.js{
+  float: left;
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-size: 100% ;
+  width: 20%;
+  position: relative;
+  height: 100vh;
+}
+.html{
+  background-image: url("images/banner/ban1.png");
+}
+.css{
+  background-image: url("images/banner/ban2.png");
+}
+.angular{
+  background-image: url("images/banner/ban4.png");
+}
+.js{
+  background-image: url("images/banner/ban3.png");
+}
+.photoshop{
+  background-image: url("images/banner/ban5.png");
+}
+
+
+@keyframes html-animations {
+  from{
+      left: -100px;
+
+  }
+  to{
+      left: 0;
+  }
+}
+
+@keyframes css-animations {
+  from{
+      left: -200px;
+
+  }
+  to{
+    opacity: 1;
+      left: 0;
+  }
+}
+
+@keyframes js-animations {
+  from{
+      left: -300px;
+  }
+  to{
+      left: 0;
+  }
+}
+
+@keyframes angular-animations {
+  from{
+      left: -400px;
+
+  }
+  to{
+      left: 0;
+  }
+}
+
+@keyframes photoshop-animations {
+  from{
+      left: -500px;
+
+  }
+  to{
+      left: 0;
+  }
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .html-animation {
+    animation: html-animations 2s ;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  };
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .css-animation {
+    animation: css-animations 2s ;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  };
+}
+@media (prefers-reduced-motion: no-preference) {
+  .js-animation {
+    animation: js-animations 2s ;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  };
+}
+@media (prefers-reduced-motion: no-preference) {
+  .angular-animation {
+    animation: angular-animations 2s ;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  };
+}
+@media (prefers-reduced-motion: no-preference) {
+  .photoshop-animation {
+    animation: photoshop-animations 2s ;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  };
+}
+
+/*Freelance*/
+
+.freelancer{
+  background-image: url(images/background/freelance-moon.png);
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-size: 100% ;
+  height: 100vh;
+  color: white;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.freelancer p{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+/*Freelancer*/
+
+.card-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  background-color: white;
+  border-radius: 20px;
+  gap: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.card > img{
+  width: inherit;
+  border-radius: 20px 20px 0 0;
+}
+
+.card > h1{
+  font-size: 20px;
+  font-weight: 800;
+  color: hsl(223, 47%, 23%);
+}
+
+.card p{
+  color: hsl(224, 23%, 55%);
+  text-align: center;
+  width: 250px;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+button{
+  width: 230px;
+  height: 40px;
+  font-size: 14px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.payment:hover{
+  background-color: hsla(245, 34%, 54%, 0.986);;
+}
+
+.cancel:hover{
+  background-color: rgb(82, 82, 82);
+}
+
+.payment{
+  background-color: hsl(245, 75%, 52%);
+}
+
+.cancel{
+  margin-bottom: 20px;
+  background-color: black;
+  display: flex;
+  padding-left: 3.3rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.price-card{
+  width: 220px;
+  display: flex;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.2rem;
+}
+.price-plan{
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.price-card > abbr > img{
+  width: 35px;
+}
+
+.price-plan > h1 {
+  font-size: 12px;
+}
+
+.price-plan > span{
+  font-size: 12px;
+  color:  hsl(224, 23%, 55%);
+}
+
+a{
+  font-size: 12px;
+}
+
+/*Contact*/
+.contact{
+  height: 100vh;
+  color: white;
+  font-family: Glitch;
+  font-size: 20px;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.contact p{
+  margin-bottom: 6%;
+}
+
+
+@keyframes contact-animation {
+  0%   {top: 0px;bottom:0}
+50%  {top: 20px; }
+75%  {top:10;bottom: 20px; }
+100% {top: 0px;bottom:0}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .contact-animation {
+    animation: contact-animation 3s;
+    animation-iteration-count: infinite;
+  };
+}
+
+/*Contact*/
+
+@media only screen and (max-width: 767px) {
+
+  body{
+      padding: 0;
+      margin: 0;
+      
+  }
+  #front-end{
+      font-size: large;
+  }
+ 
+  .main{
+    overflow-x: hidden;
+    background-image: url(images/background/moon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    width: 100%;
+    
+  }
+  
+  .name{
+        position:relative;
+        bottom:20vw;
+  }
+
+  #name-s,#name-h,#name-e,#name-i,#name-k,#name-b,#name-a,#name-z,#name-i,#name-t,#name-h{
+      font-size: 50px;
+      position: relative;
+      margin-top: 6vw;
+      margin-bottom: 3vw;
+  }
+  
+  .info{
+      height:100vh;
+  }
+  
+  .overview,.contact{
+    overflow-x: hidden;
+    background-image: url(images/background/moon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%; 
+  }
+  .info{
+    margin: 0;
+  }
+  info p{
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    text-align:center;
+  }
+
+  .planet-1{
+  z-index: 0;
+  position: absolute;
+  width: 40vw;
+  height: 40vw;
+  left: -20vw;
+  top: 40vw;
+  }
+
+  .planet-2{
+    z-index: 0;
+    position: absolute;
+    width: 50vw;
+    height: 50vw;
+    bottom: 80px;
+    left: 200px;
+  }
+  .planet-3{
+    z-index: 0;
+    position: absolute;
+    width: 25vw;
+    height: 25vw;
+    left: 300px;
+    top: 50px;
+
+  }
+
+  
+ 
+
+  .skill{
+    color: white;
+    width: 100%;
+    font-family: Glitch;
+    margin-top: 35%;
+    padding-top: 80px;
+    
+  }
+  .skill img{
+    z-index: 1;
+    position: relative;
+    top: 0;
+    margin: 0;
+    left: 38%;
+    height: 80px;
+    width: 80px;
+    bottom: 200px;
+    right: 70px;
+
+  }
+  .skill p{
+    position: relative;
+    color: white;
+    font-size: 10px;
+    margin: 0;
+    left: 35%;
+  }
+  .html,.css,.angular,.photoshop,.js{
+    float: none;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-size: 100% ;
+    height: 119px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+  .html{
+    background-image: url(images/banner-mobile/ban1.png);
+  }
+  .css{
+    background-image: url(images/banner-mobile/ban2.png);
+  }
+  .js{
+    background-image: url(images/banner-mobile/ban3.png);
+  }
+  .angular{
+    background-image: url(images/banner-mobile/ban4.png);
+  }
+  .photoshop{
+    background-image: url(images/banner-mobile/ban5.png);
+  }
+
+  .freelancer{
+    background-image: url(images/background/freelance-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100% ;
+    height: 100vh;
+    color: white;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    text-align: center;
+  }
+  
+  .freelancer p{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+
+}
